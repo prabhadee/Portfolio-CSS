@@ -1,0 +1,96 @@
+:root {
+    --bg-dark: #1A1E23;
+    --text-light: #FFFFFF;
+    --accent-color: #00e5ff;
+    --card-bg: #2C3239;
+}
+
+.about-section {
+    background-color: #3F4758;
+    color: var(--text-light);
+    padding: 50px 5%;
+}
+
+.about-section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.about-details {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-image img {
+    max-width: 500px;
+    border-radius: 50%;
+    box-shadow: 0 0 50px var(--accent-color);
+    object-fit: cover;
+}
+
+.about-info {
+    flex: 1;
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.about-info h3 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: var(--accent-color);
+}
+
+.personal-details {
+    margin-bottom: 20px;
+}
+
+.personal-details p {
+    margin: 10px 0;
+    color: var(--text-light);
+    font-size: larger;
+}
+
+.personal-details p strong {
+    color: var(--accent-color);
+    margin-right: 10px;
+    font-size: larger;
+}
+
+.see-more {
+    background-color: var(--accent-color);
+    color: var(--bg-dark);
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.see-more:hover {
+    background-color: #00e5ff;
+}
+
+@media (max-width: 1024px) {
+    .about-details {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        max-width: 300px;
+    }
+
+    .about-info {
+        width: 100%;
+    }
+}

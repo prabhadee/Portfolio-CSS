@@ -1,0 +1,139 @@
+.projects-section {
+    background-color: #121620;  
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .projects-section h2 {
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: white;
+  }
+  
+  .projects-section h2 span {
+    color: #00e1ff;  
+  }
+  
+  .projects-section p {
+    max-width: 80%;
+    margin: 0 auto 60px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #ffffff;
+  }
+  
+  .project-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .project-card {
+    width: 380px;
+    height: 450px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 20px rgba(0, 225, 255, 0.15);
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(0, 225, 255, 0.3);
+  }
+  
+  /* Tic-Tac-Toe project card styling */
+  .project-card:nth-child(1) {
+    background: linear-gradient(145deg, #00e5ff, #00e5ff);
+    border: 2px solid #00e5ff;
+    box-shadow: 0 0 25px aqua(140, 86, 255, 0.4);
+  }
+  
+  /* BookNook project card styling */
+  .project-card:nth-child(2) {
+    background: linear-gradient(145deg, #00e5ff,#00e5ff);
+    border: 2px solid rgba(210, 186, 150, 0.3);
+    color: #121620;
+  }
+  
+  .project-card h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 30px 0 15px;
+    padding: 0 20px;
+  }
+  
+  .project-card p {
+    font-size: 1rem;
+    margin: 0 auto;
+    padding: 0 25px;
+    margin-bottom: 20px;
+  }
+  
+  .project-card:nth-child(1) h3,
+  .project-card:nth-child(1) p {
+    color: black;
+  }
+  
+  .project-card:nth-child(2) h3,
+  .project-card:nth-child(2) p {
+    color: black;
+  }
+  
+  /* Project icon styling */
+  .project-icon {
+    margin-top: 25px;
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.8);
+    
+  }
+  img{
+    width: 100%;
+    height: 100%;
+  }
+  /* BookNook icon specific styling */
+  .book-icon {
+    margin-top: 40px;
+    width: 120px;
+    height: auto;
+  }
+  
+  /* Glowing effect for cards */
+  .project-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+  }
+  
+  .project-card:nth-child(1)::after {
+    background: linear-gradient(90deg, transparent, #00e1ff, transparent);
+  }
+  
+  .project-card:nth-child(2)::after {
+    background: linear-gradient(90deg, transparent, #8a6e4e, transparent);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    .projects-section h2 {
+      font-size: 2.5rem;
+    }
+    
+    .projects-section p {
+      max-width: 95%;
+      font-size: 1rem;
+    }
+    
+    .project-card {
+      width: 90%;
+      max-width: 350px;
+    }
+  }
